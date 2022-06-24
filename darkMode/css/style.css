@@ -181,6 +181,27 @@
 	margin: 0px 0px 0px 0px;
 }
 
+.header__main__item__content {
+	position: absolute;
+	width: 100%;
+	height: 65%;
+	background-color: #F9C808;
+	top: 25%;
+	overflow-y: scroll;
+}
+
+.header__main__item__content::-webkit-scrollbar {
+	width: 6px;
+}
+
+.header__main__item__content::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.header__main__item__content::-webkit-scrollbar-thumb {
+	background-color: darkgrey;
+}
+
 /* =========================================== */
 /* Header: KeyFrames                           */
 /* =========================================== */
