@@ -1,0 +1,156 @@
+@import url(nullstyle.css);
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@import url(media.css);
+
+
+
+.main__content__bio {
+	border-bottom: none;
+	flex: 1 1 auto;
+}
+
+.main__order__item {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.main__content__bio p {
+	font-size: 14px;
+	margin: 0px 0px 15px 0px;
+}
+
+.main__content__bio p:last-child {
+	padding: 0px 0px 0px 0px;
+}
+
+.main__order__column {
+	padding: 0 15px;
+}
+
+.main__order__item {
+	padding: 30px 30px 10px 30px;
+}
+
+.main__profile__body {
+	width: 100%;
+	background-color: #e1e1e1;
+	padding: 40px 40px 0px 40px;
+}
+
+.main__profile__coulmn {
+	margin: 0px 0px 30px 0px;
+}
+
+.main__prifile__item__name {
+	position: relative;
+}
+
+.input__profile {
+	width: 100%;
+	padding: 20px 30px 20px 100px;
+	background-color: #D6D6D6;
+	border: none;
+	color: #070E15;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1.2px;
+	opacity: 0.8;
+
+}
+
+.input__profile::placeholder {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	color: #070E15;
+	letter-spacing: 1px;
+	font-size: 14px;
+	opacity: 0.4;
+}
+
+.main__profile__icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	background-color: #9a9a9a;
+}
+
+.main__profile__icon img {
+	width: 30px;
+	height: auto;
+	margin: 0px 20px 0px 20px;
+	opacity: 0.4;
+}
+
+.textarea__profile {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	padding: 20px 30px 20px 100px;
+	border: none;
+	background-color: #D6D6D6;
+	color: #070E15;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 1.2px;
+	opacity: 0.8;
+
+}
+
+.textarea__profile__icon {
+	align-items: flex-start;
+	height: 100%;
+
+}
+
+.textarea__profile__icon img {
+	margin: 20px 20px 0px 20px;
+}
+
+.main__profile__coulmn:nth-child(3) .main__prifile__item__name {
+	height: 250px;
+}
+
+.textarea__profile::placeholder {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #070E15;
+	letter-spacing: 1px;
+	font-size: 14px;
+	opacity: 0.4;
+}
+
+.main__profile__coulmn:last-child {
+	margin: 0px 0px 0px 0px;
+}
+
+.main__profile__coulmn:last-child .btn__title {
+	padding: 20px 0px 50px 0px;
+}
+
+.main__profile__coulmn:last-child .btn__title a {
+	-webkit-box-shadow: 5px 5px 16px -2px rgba(0, 0, 0, 0.59);
+	box-shadow: 5px 5px 16px -2px rgba(0, 0, 0, 0.59);
+}
+
+.main__order__profile {
+	margin: 0px 0px 250px 0px;
+}
+
+.main-Two {
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+.main-Two.element-show {
+	opacity: 1;
+	transition: all 1.5s;
+	transform: translateY(0%);
+}

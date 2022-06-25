@@ -143,3 +143,14 @@
 .main__order__profile {
 	margin: 0px 0px 250px 0px;
 }
+
+.main-Two {
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+.main-Two.element-show {
+	opacity: 1;
+	transition: all 1.5s;
+	transform: translateY(0%);
+}

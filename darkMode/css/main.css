@@ -208,6 +208,17 @@
 	transform: translateY(-5px);
 }
 
+.main__item__services {
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+.main__item__services.element-show {
+	opacity: 1;
+	transition: all 1.5s;
+	transform: translateY(0%);
+}
+
 .main__price__body {
 	display: flex;
 	flex-wrap: wrap;
@@ -480,4 +491,26 @@
 	color: #fff;
 	letter-spacing: 1px;
 	opacity: 0.6;
+}
+
+.main__item__prices {
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+.main__item__prices.element-show {
+	opacity: 1;
+	transition: all 1.5s;
+	transform: translateY(0%);
+}
+
+.main__item__reviews {
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+.main__item__reviews.element-show {
+	opacity: 1;
+	transition: all 1.5s;
+	transform: translateY(0%);
 }
