@@ -2,16 +2,21 @@
 /* Body and other main tags                    */
 /* =========================================== */
 
+body {
+
+}
+
 .wrapper {
-	padding: 0px 70px 50px 70px;
+	padding: 50px 70px 50px 70px;
 	background-color: #09121a;
 }
 
 .main__container {
 	display: grid;
-	grid-template-columns: [header] 0.40fr [main] 2fr;
+	grid-template-columns: [header] 0.45fr [main] 2fr;
 	gap: 40px;
 }
+
 
 .header {
 	position: sticky;
@@ -24,6 +29,7 @@
 .main {
 	margin: 50px 0px 0px 0px;
 	position: relative;
+	min-width: 100%;
 }
 
 .footer {
@@ -58,10 +64,10 @@
 .header__main__item {
 	position: absolute;
 	width: 100%;
-	height: 25%;
+	height: 29%;
 	top: 0;
 	left: 0;
-	z-index: 5;
+	z-index: 20;
 	background-color: #0E1D29;
 	display: flex;
 	align-items: center;
@@ -197,7 +203,7 @@
 	background-color: #132637;
 	top: 25%;
 	overflow-y: scroll;
-	padding: 30px 30px 0px 30px;
+	padding: 50px 30px 0px 30px;
 }
 
 .header__main__item__content::-webkit-scrollbar {
@@ -447,6 +453,7 @@
 }
 
 .resume a {
+	font-size: 10px;
 	text-decoration: none;
 	color: #fff;
 	opacity: 0.6;
@@ -524,3 +531,4 @@
 /* =========================================== */
 /* Footer                                      */
 /* =========================================== */
+

@@ -5,12 +5,13 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<!-- Links for CSS -->
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/media.css">
 
 	<!-- Fonts from GoogleFonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +30,37 @@
 
 <body>
 
+
+
 	<div class="wrapper">
+
+		<header class="header__menu" id="header">
+			<div class="container">
+				<div class="header__menu__body">
+					<a href="" class="header__logo">MONO NET</a>
+					<div class="header__menu__burger">
+						<span></span>
+					</div>
+
+					<nav class="header__menu__menu">
+						<ul class="header__menu__list">
+							<li><a href="#" data-scroll="#main__title" class="header__menu__link">Головна сторінка</a>
+							</li>
+
+							<li><a href="#" data-scroll="#price" class="header__menu__link">Каталог Вартості</a></li>
+
+							<li><a href="#" class="header__menu__link" data-scroll="#reviews">Радісні Відгуки</a></li>
+
+							<li><a href="#" class="header__menu__link">Форма Замовлення</a></li>
+
+							<li><a href="#" class="header__menu__link">Світла Тема</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+
 		<div class="main__container">
 			<header class="header">
 				<div class="header__fullscreen">
@@ -172,7 +203,7 @@
 			</header>
 
 			<main class="main">
-				<section class="main__all__items">
+				<section class="main__all__items" id="main__title">
 					<div class="main__content">
 						<div class="main__text">
 							<div class="main__title">
@@ -182,7 +213,7 @@
 										.NET Deweloper!</span> &lt;/<span class="code">code</span>&gt;</p>
 
 								<div class="btn__title btn">
-									<a href="">Переглянути Роботи!</a>
+									<a href="other/pagaOrder.html" target="_blank">Замовити Проект!</a>
 								</div>
 							</div>
 						</div>
@@ -199,21 +230,21 @@
 										<p>Роки Практики</p>
 									</div>
 								</div>
-		
+
 								<div class="page__items">
 									<div data-digits-counter class="page__counter">25</div>
 									<div class="page__text">
 										<p>Завершених проекта</p>
 									</div>
 								</div>
-		
+
 								<div class="page__items">
 									<div data-digits-counter class="page__counter">50</div>
 									<div class="page__text">
 										<p>Задоволених клієнта</p>
 									</div>
 								</div>
-		
+
 								<div class="page__items">
 									<div data-digits-counter class="page__counter">10</div>
 									<div class="page__text">
@@ -224,35 +255,417 @@
 						</div>
 					</div>
 				</section>
-			</main>
 
-			<footer class="footer">
-				<div class="footer__content">
-					<nan class="footer__nav">
-						<ul class="nav__list">
-							<a href="">
-								<li>Головна Сторінка</li>
-							</a>
-							<a href="">
-								<li>Надання Послуг</li>
-							</a>
-							<a href="">
-								<li>Переглянути Роботи</li>
-							</a>
-							<a href="">
-								<li>Форма Замовлення</li>
-							</a>
-						</ul>
-					</nan>
-				</div>
-			</footer>
+				<section class="main__item__services">
+					<div class="services__main__title">
+						<p>Надання Послуг</p>
+					</div>
+					<div class="service__body">
+						<div class="services__column">
+							<div class="services__item">
+								<div class="item__services__title">
+									<p>Веб-Розробка</p>
+								</div>
+								<div class="item__services__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi
+										deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</p>
+								</div>
+								<div class="item__services__order">
+									<a href="other/pagaOrder.html" target="_blank">
+										<p>Замовити Вже </p><img src="img/icons/pointer-right-svgrepo-com.svg"
+											alt="Pointer">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__column">
+							<div class="services__item">
+								<div class="item__services__title">
+									<p>Дизайн Гри</p>
+								</div>
+								<div class="item__services__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi
+										deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</p>
+								</div>
+								<div class="item__services__order">
+									<a href="other/pagaOrder.html" target="_blank">
+										<p>Замовити Вже </p><img src="img/icons/pointer-right-svgrepo-com.svg"
+											alt="Pointer">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__column">
+							<div class="services__item">
+								<div class="item__services__title">
+									<p>UI/UX Дизайн </p>
+								</div>
+								<div class="item__services__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi
+										deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</p>
+								</div>
+								<div class="item__services__order">
+									<a href="other/pagaOrder.html" target="_blank">
+										<p>Замовити Вже </p><img src="img/icons/pointer-right-svgrepo-com.svg"
+											alt="Pointer">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__column">
+							<div class="services__item">
+								<div class="item__services__title">
+									<p>Веб-Розробка</p>
+								</div>
+								<div class="item__services__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi
+										deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</p>
+								</div>
+								<div class="item__services__order">
+									<a href="other/pagaOrder.html" target="_blank">
+										<p>Замовити Вже </p><img src="img/icons/pointer-right-svgrepo-com.svg"
+											alt="Pointer">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__column">
+							<div class="services__item">
+								<div class="item__services__title">
+									<p>Веб-Розробка</p>
+								</div>
+								<div class="item__services__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi
+										deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</p>
+								</div>
+								<div class="item__services__order">
+									<a href="other/pagaOrder.html" target="_blank">
+										<p>Замовити Вже </p><img src="img/icons/pointer-right-svgrepo-com.svg"
+											alt="Pointer">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__column">
+							<div class="services__item">
+								<div class="item__services__title">
+									<p>Веб-Розробка</p>
+								</div>
+								<div class="item__services__text">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse commodi
+										deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur doloribus.</p>
+								</div>
+								<div class="item__services__order ">
+									<a href="other/pagaOrder.html" target="_blank">
+										<p>Замовити Вже </p><img src="img/icons/pointer-right-svgrepo-com.svg"
+											alt="Pointer">
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+				<section id="price">
+					<div class="main__item__price">
+						<div class="services__main__title">
+							<p>Каталог Вартості</p>
+						</div>
+
+						<div class="main__price__body">
+							<div class="price__column">
+								<div class="price__item">
+
+									<div class="price__content">
+										<div class="main__price__title">
+											<p>Початковий Рівень</p>
+										</div>
+										<div class="main__price__price">
+											<p>$ <span> FREE </span>hour</p>
+										</div>
+										<div class="main__price__list">
+											<ul>
+
+												<li><img src="img/icons/check-svgrepo-com (1).svg" alt="">
+													<p>Ui Design
+													</p>
+												</li>
+
+												<li><img src="img/icons/check-svgrepo-com (1).svg" alt="">
+													<p>Web Development
+													</p>
+												</li>
+
+												<li><img src="img/icons/plus-svgrepo-com (1).svg" alt="">
+													<p>Logo design
+
+													</p>
+												</li>
+
+												<li><img src="img/icons/plus-svgrepo-com (1).svg" alt="">
+													<p>SEO optimization
+
+													</p>
+												</li>
+
+												<li><img src="img/icons/plus-svgrepo-com (1).svg" alt="">
+													<p>WordPress integration
+													</p>
+												</li>
+											</ul>
+										</div>
+										<div class="item__services__order">
+											<a href="other/pagaOrder.html" target="_blank">
+												<p>Замовити Вже </p><img src="img/icons/pointer-right-svgrepo-com.svg"
+													alt="Pointer">
+											</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="price__column">
+								<div class="price__item">
+
+									<div class="price__content">
+										<div class="main__price__title">
+											<p>Середній Рівень</p>
+										</div>
+										<div class="main__price__price">
+											<p>$ <span> 30 </span>hour</p>
+										</div>
+										<div class="main__price__list">
+											<ul>
+
+												<li><img src="img/icons/check-svgrepo-com (1).svg" alt="">
+													<p>Ui Design
+													</p>
+												</li>
+
+												<li><img src="img/icons/check-svgrepo-com (1).svg" alt="">
+													<p>Web Development
+													</p>
+												</li>
+
+												<li><img src="img/icons/check-svgrepo-com (1).svg" alt="">
+													<p>Logo design
+
+													</p>
+												</li>
+
+												<li><img src="img/icons/plus-svgrepo-com (1).svg" alt="">
+													<p>SEO optimization
+
+													</p>
+												</li>
+
+												<li><img src="img/icons/plus-svgrepo-com (1).svg" alt="">
+													<p>WordPress integration
+													</p>
+												</li>
+											</ul>
+										</div>
+										<div class="item__services__order">
+											<a href="other/pagaOrder.html" target="_blank">
+												<p>Замовити Вже </p><img src="img/icons/pointer-right-svgrepo-com.svg"
+													alt="Pointer">
+											</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="price__column">
+								<div class="price__item">
+
+									<div class="price__content">
+										<div class="main__price__title">
+											<p>Преміум Рівень</p>
+										</div>
+										<div class="main__price__price">
+											<p>$ <span> 300 </span>hour</p>
+										</div>
+										<div class="main__price__list">
+											<ul>
+
+												<li><img src="img/icons/check-svgrepo-com (1).svg" alt="">
+													<p>Ui Design
+													</p>
+												</li>
+
+												<li><img src="img/icons/check-svgrepo-com (1).svg" alt="">
+													<p>Web Development
+													</p>
+												</li>
+
+												<li><img src="img/icons/check-svgrepo-com (1).svg" alt="">
+													<p>Logo design
+
+													</p>
+												</li>
+
+												<li><img src="img/icons/check-svgrepo-com (1).svg" alt="">
+													<p>SEO optimization
+
+													</p>
+												</li>
+
+												<li><img src="img/icons/check-svgrepo-com (1).svg" alt="">
+													<p>WordPress integration
+													</p>
+												</li>
+											</ul>
+										</div>
+										<div class="item__services__order">
+											<a href="other/pagaOrder.html" target="_blank">
+												<p>Замовити Вже </p><img src="img/icons/pointer-right-svgrepo-com.svg"
+													alt="Pointer">
+											</a>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+
+				<section class="main__item__reviews" id="reviews">
+					<div class="services__main__title">
+						<p>Відгуки</p>
+					</div>
+
+					<div class="item__rewiews">
+						<div class="slider">
+							<div class="slider__column">
+								<div class="slider__item">
+									<div class="slider__images">
+										<img src="img/icons/mainPhotos/beautiful-candid-woman-with-curly-hairstyle-smiling-and-looking-happy-at-front-standing-upbeat-against-white-wall.jpg"
+											alt="Woman One">
+									</div>
+									<div class="slider__text">
+										<div class="slider__name">
+											<p>Anastasia Truman</p>
+										</div>
+										<div class="slider__who">
+											<p>Template author</p>
+										</div>
+									</div>
+
+									<div class="slider__about">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse
+											commodi
+											deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur
+											doloribus.Lorem
+											ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+							<div class="slider__column">
+								<div class="slider__item">
+									<div class="slider__images">
+										<img src="img/icons/mainPhotos/happy-bearded-young-man-looks-with-joyful-expression-has-friendly-smile-wears-yellow-sweater-and-red-hat.jpg"
+											alt="Woman One">
+									</div>
+									<div class="slider__text">
+										<div class="slider__name">
+											<p>Anastasia Truman</p>
+										</div>
+										<div class="slider__who">
+											<p>Template author</p>
+										</div>
+									</div>
+
+									<div class="slider__about">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse
+											commodi
+											deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur
+											doloribus.Lorem
+											ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="slider__column">
+								<div class="slider__item">
+									<div class="slider__images">
+										<img src="img/icons/mainPhotos/portrait-of-confident-and-happy-woman-with-short-hair-cross-arms-on-chest-like-professional-and-smiling-standing-against-white-wall.jpg"
+											alt="Woman One">
+									</div>
+									<div class="slider__text">
+										<div class="slider__name">
+											<p>Anastasia Truman</p>
+										</div>
+										<div class="slider__who">
+											<p>Template author</p>
+										</div>
+									</div>
+
+									<div class="slider__about">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse
+											commodi
+											deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur
+											doloribus.Lorem
+											ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="slider__column">
+								<div class="slider__item">
+									<div class="slider__images">
+										<img src="img/icons/mainPhotos/pretty-beautiful-woman-with-blonde-long-hair-having-excited-and-happy-facial-expression.jpg"
+											alt="Woman One">
+									</div>
+									<div class="slider__text">
+										<div class="slider__name">
+											<p>Anastasia Truman</p>
+										</div>
+										<div class="slider__who">
+											<p>Template author</p>
+										</div>
+									</div>
+
+									<div class="slider__about">
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus esse
+											commodi
+											deserunt vitae, vero quasi! Veniam quaerat tenetur pariatur
+											doloribus.Lorem
+											ipsum dolor sit amet, consectetur adipisicing elit.</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+				<footer class="main__footer">
+					<div class="foot__text">
+						<p>Посміхнись! Ти просто чудо!</p>
+					</div>
+				</footer>
+
+			</main>
 		</div>
 	</div>
 
 	<!-- Scripts for JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/header.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/footer.js"></script>
+	<script src="js/menu.js"></script>
+	<script src=""></script>
 </body>
 
 </html>
