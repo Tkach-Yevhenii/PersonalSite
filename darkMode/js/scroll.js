@@ -40,11 +40,11 @@ $(function () {
 
 	for (let elm3 of elementThree) {
 		observer.observe(elm3);
-	}
+	};
 
 	for (let elm4 of elementFour) {
 		observer.observe(elm4);
 	}
-	
+
 });
 
